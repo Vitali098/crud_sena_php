@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style_in_sesion.css">
+</head>
+<body>
+    <form action="registro_estudiantes.php" method="post">
+        <div class="login-box">
+            <p>Iniciar Sesión</p>
+            <div class="user-box">
+                <input required="" name="user" type="text">
+                <label>User</label>
+            </div>
+            <select name="rol" id="rol" required>
+                <option value="">Seleccione...</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="admin">Administrador</option>
+            </select>
+            <div class="user-box">
+                <input required="" name="contraseña" type="password">
+                <label>Contraseña</label>
+            </div>
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Entrar
+            </button>
+            <p>¿No tiene cuenta? <a href="registro_adsi.html" class="a2">Registrarse</a></p>
+        </div>
+    </form>
+ 
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style_registro.css">
+</head>
+<body>
+    <form action="registro.php" method="post">
+        <div class="login-box">
+            <p>Regístrate</p>
+            <div class="user-box">
+                <input required="" name="nombre" type="text">
+                <label>Nombre</label>
+            </div>
+            <div class="user-box">
+                <input required="" name="apellido" type="text">
+                <label>Apellido</label>
+            </div>
+            <div class="user-box">
+                <input required="" name="user" type="text">
+                <label>User</label>
+            </div>
+            <select name="programa" id="programa" required> 
+                <option value="">Programas/Admin...</option>
+                <option value="Análisis y Desarrollo de Software">Análisis y Desarrollo de Software</option>
+                <option value="Artes Gráficas">Artes Gráficas</option>
+                <option value="Gestión">Gestión</option>
+                <option value="admin">Administrador</option>
+
+            </select>
+            <select name="rol" id="rol" required>
+                <option value="">Rol...</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="admin">Administrador</option>
+
+            </select>
+            <div class="user-box">
+                <input required="" name="contraseña" type="password">
+                <label>Contraseña</label>
+            </div>
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Entrar
+            </button>
+            <p>¿Tienes cuenta? <a href="in_sesion_adsi.html" class="a2">Iniciar Sesión</a></p>
+        </div>
+    </form>
+    
+</body>
+</html>
